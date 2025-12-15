@@ -1,4 +1,4 @@
-/* NAV: highlight active link and ensure dark nav */
+
 (function(){
   const path = window.location.pathname.split('/').pop() || 'index.html';
   const map = {
@@ -14,11 +14,11 @@
   const el = document.getElementById(id);
   if(el) el.classList.add('active');
 
-  // ensure nav dark everywhere
+ 
   const nav = document.querySelector('.site-nav');
   if(nav) nav.classList.add('dark');
 
-  // parallax hero for pages with hero-bg
+ 
   const heroBg = document.getElementById('heroBg') || document.querySelector('.hero-bg');
   if(heroBg){
     window.addEventListener('scroll', () => {
@@ -28,7 +28,7 @@
   }
 })();
 
-/* SAFETY MODAL: show once, dismissible, Escape and outside-click support + reopen buttons */
+
 (function(){
   const modal = document.getElementById('safetyModal');
   if(!modal) return;
@@ -61,14 +61,14 @@
   document.addEventListener('keydown', (e) => { if(e.key === 'Escape' && modal.classList.contains('open')) closeModal(true); });
   modal.addEventListener('click', (e) => { if(e.target === modal) closeModal(true); });
 
-  // footer reopen buttons
+ 
   ['reopenSafety','reopenSafetyResources','reopenSafetyMore','reopenSafetyHighlights'].forEach(id=>{
     const btn = document.getElementById(id);
     if(btn) btn.addEventListener('click', () => openModal());
   });
 })();
 
-/* STATS CAROUSEL (home) */
+
 (function(){
   const slidesEl = document.querySelector('[data-slides]');
   if(!slidesEl) return;
@@ -121,7 +121,7 @@
   resetAuto();
 })();
 
-/* PRINCIPLES reveal */
+
 (function(){
   const el = document.getElementById('principles');
   if(!el) return;
@@ -133,7 +133,7 @@
   } else { el.classList.add('visible'); }
 })();
 
-/* RESOURCES: tags + filtering */
+
 (function initTagsAndFilters(){
   const grid = document.getElementById('resourceGrid');
   if(!grid) return;
@@ -200,7 +200,7 @@
   applyFilters();
 })();
 
-/* MORE SUPPORT: search and submit (ensure thank-you hidden until submit) */
+
 (function(){
   const supportSearch = document.getElementById('supportSearch');
   if(supportSearch){
@@ -236,7 +236,7 @@
   }
 })();
 
-/* FAQ accordion behavior */
+
 (function(){
   const faqQuestions = Array.from(document.querySelectorAll('.faq-question'));
   if(!faqQuestions.length) return;
@@ -268,7 +268,7 @@
   });
 })();
 
-/* HIGHLIGHTS carousel */
+
 (function(){
   const track = document.querySelector('.carousel-track');
   const prevBtn = document.querySelector('.carousel-arrow.left');
@@ -286,3 +286,4 @@
     }
   });
 })();
+
