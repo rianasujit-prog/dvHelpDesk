@@ -1,0 +1,190 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<title>Help Desk — Community Resources</title>
+<link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+<nav class="site-nav dark" role="navigation" aria-label="Main">
+  <div class="brand">
+    
+    <span class="site-title">DV's Help Desk</span>
+  </div>
+  <ul class="nav-links" role="menubar">
+    <li><a class="nav-link" id="nav-home" href="index.html">Home</a></li>
+    <li><a class="nav-link active" id="nav-resources" href="resources.html">Community Resources</a></li>
+    <li><a class="nav-link" id="nav-more" href="more-support.html">More Support</a></li>
+    <li><a class="nav-link" id="nav-highlights" href="highlights.html">Community Highlights</a></li>
+    <li><a class="nav-link" id="nav-faq" href="faq.html">FAQs</a></li>
+  </ul>
+</nav>
+
+<header class="resources-hero" style="background-image:url('images/Hands-reaching-out.png')">
+  <div class="resources-hero-overlay">
+    <div class="wrap">
+      <div class="title-box solid">
+        <h1>Community Resources</h1>
+      </div>
+      <p class="hero-sub">Find local services, hotlines, and support organizations.</p>
+    </div>
+  </div>
+</header>
+
+<main class="wrap resource-hub">
+  <div class="resources-layout">
+    <aside class="filters" aria-label="Filters">
+      <div class="filter-box">
+        <label for="searchInput" class="sr-only">Search</label>
+        <input id="searchInput" type="search" placeholder="Search by keyword, service, or phone..." oninput="applyFilters()" />
+      </div>
+
+      <div class="filter-box">
+        <label for="areaSelect">Area</label>
+        <select id="areaSelect" onchange="applyFilters()">
+          <option value="">All areas</option>
+          <option value="seattle">Seattle</option>
+          <option value="bellevue">Bellevue</option>
+          <option value="renton">Renton</option>
+          <option value="king-county">King County</option>
+          <option value="eastside">Eastside</option>
+          <option value="redmond">Redmond</option>
+        </select>
+      </div>
+
+      <div class="filter-box">
+        <div class="tag-list" id="tagList" aria-label="Filter by tags"></div>
+      </div>
+    </aside>
+
+    <section class="resources-grid" id="resourceGrid" aria-live="polite">
+      <!-- Full list populated below. Each card: data-area, data-tags, logo file name in /images -->
+      <article class="resource" data-area="bellevue" data-tags="counseling,crisis,mental-health">
+        <img class="logo" src="images/consejo.png" alt="Consejo logo" onerror="this.style.display='none'">
+        <h4>Consejo Counseling and Referral Service</h4>
+        <div class="meta"><a href="https://www.consejocounseling.org" target="_blank" rel="noopener">consejocounseling.org</a> · 206-461-4880</div>
+        <p class="desc">Mon–Fri, 8:00 AM – 5:00 PM. After Hours & Weekend Crisis Line: 206-461-3222</p>
+      </article>
+
+      <article class="resource" data-area="king-county" data-tags="shelter,advocacy,24hr">
+        <img class="logo" src="images/dawn.png" alt="DAWN logo" onerror="this.style.display='none'">
+        <h4>Domestic Abuse Women’s Network (DAWN)</h4>
+        <div class="meta"><a href="https://www.dawnrising.org" target="_blank" rel="noopener">dawnrising.org</a> · 425-656-4305</div>
+        <p class="desc">Main Line: 425-656-4305. 24hr Advocacy & Support Line: 425-656-7867 · Toll Free: 1-877-465-7234</p>
+      </article>
+
+      <article class="resource" data-area="seattle" data-tags="legal,immigrant,rights">
+        <img class="logo" src="images/nwirp.png" alt="NWIRP logo" onerror="this.style.display='none'">
+        <h4>Northwest Immigrant Rights Project</h4>
+        <div class="meta"><a href="https://www.nwirp.org" target="_blank" rel="noopener">nwirp.org</a> · 206-587-4009</div>
+        <p class="desc">Seattle Office. Toll Free: 1-800-445-5771. Hours: Mon–Fri, 9:30 AM – 12:00 PM & 1:00 – 4:30 PM</p>
+      </article>
+
+      <article class="resource" data-area="seattle" data-tags="refugee,community,services">
+        <img class="logo" src="images/rewa.png" alt="ReWA logo" onerror="this.style.display='none'">
+        <h4>Refugee Women’s Alliance (ReWA)</h4>
+        <div class="meta"><a href="https://www.rewa.org" target="_blank" rel="noopener">rewa.org</a> · 206-721-0243</div>
+        <p class="desc">Main Office: 206-721-0243. Kent Office: 253-859-6197</p>
+      </article>
+
+      <article class="resource" data-area="renton" data-tags="legal,advocacy,protection">
+        <img class="logo" src="images/protectionorder.png" alt="Protection Order logo" onerror="this.style.display='none'">
+        <h4>King County Protection Order Advocacy Program</h4>
+        <div class="meta"><a href="https://www.protectionorder.org" target="_blank" rel="noopener">protectionorder.org</a> · 206-477-1103</div>
+        <p class="desc">Seattle Office: 206-477-1103 · Kent Office: 206-477-3758</p>
+      </article>
+
+      <article class="resource" data-area="seattle" data-tags="empowerment,gender-based-violence">
+        <img class="logo" src="images/ywca.png" alt="YWCA logo" onerror="this.style.display='none'">
+        <h4>YWCA Seattle | King | Snohomish — Empowering Women</h4>
+        <div class="meta"><a href="https://www.ywcaworks.org/programs/gender-based-violence-specialized-services" target="_blank" rel="noopener">ywcaworks.org</a> · 206-461-4888</div>
+        <p class="desc">Call & Text Line: 877-757-8297 (Mon–Fri 8:30 AM – 5:00 PM)</p>
+      </article>
+
+      <article class="resource" data-area="king-county" data-tags="shelter,domestic-violence">
+        <img class="logo" src="images/salvation_army.png" alt="Salvation Army logo" onerror="this.style.display='none'">
+        <h4>Domestic Violence/Sexual Abuse Shelter (The Salvation Army) — King County</h4>
+        <div class="meta">425-452-7300</div>
+        <p class="desc">Emergency shelter and support services.</p>
+      </article>
+
+      <article class="resource" data-area="bellevue" data-tags="counseling,crisis">
+        <img class="logo" src="images/consejo_bellevue.png" alt="Consejo Bellevue logo" onerror="this.style.display='none'">
+        <h4>Consejo Counseling & Referral Services — Bellevue</h4>
+        <div class="meta">425-679-0801</div>
+        <p class="desc">Bellevue office contact.</p>
+      </article>
+
+      <article class="resource" data-area="king-county" data-tags="crisis,hotline">
+        <img class="logo" src="images/crisis_connections.png" alt="Crisis Connections logo" onerror="this.style.display='none'">
+        <h4>Crisis Connections — 24-hour Crisis Line (King County)</h4>
+        <div class="meta">866-427-4747</div>
+        <p class="desc">24-hour crisis support and referral.</p>
+      </article>
+
+      <article class="resource" data-area="king-county" data-tags="legal,assistance">
+        <img class="logo" src="images/elap.png" alt="ELAP logo" onerror="this.style.display='none'">
+        <h4>Eastside Legal Assistance Program</h4>
+        <div class="meta">425-747-7274</div>
+        <p class="desc">Legal help for low-income residents on the Eastside.</p>
+      </article>
+
+      <article class="resource" data-area="seattle" data-tags="jewish,services">
+        <img class="logo" src="images/jfs.png" alt="JFS logo" onerror="this.style.display='none'">
+        <h4>Jewish Family Services (JFS)</h4>
+        <div class="meta">206-461-3240</div>
+        <p class="desc">Family support services in Seattle.</p>
+      </article>
+
+      <article class="resource" data-area="bellevue" data-tags="shelter,domestic-violence">
+        <img class="logo" src="images/life_wire.png" alt="LifeWire logo" onerror="this.style.display='none'">
+        <h4>LifeWire — Bellevue</h4>
+        <div class="meta">800-827-8840</div>
+        <p class="desc">Domestic violence support and shelter services.</p>
+      </article>
+
+      <article class="resource" data-area="seattle" data-tags="hotline,24hr">
+        <img class="logo" src="images/new_beginnings.png" alt="New Beginnings logo" onerror="this.style.display='none'">
+        <h4>New Beginnings — 24hr Help Line (Seattle)</h4>
+        <div class="meta">206-737-0242</div>
+        <p class="desc">24-hour help line for survivors.</p>
+      </article>
+
+      <article class="resource" data-area="redmond" data-tags="community,services">
+        <img class="logo" src="images/together_center.png" alt="Together Center logo" onerror="this.style.display='none'">
+        <h4>Together Center — Community Services (Redmond)</h4>
+        <div class="meta">425-869-6699</div>
+        <p class="desc">Community services and support programs.</p>
+      </article>
+
+      <article class="resource" data-area="seattle" data-tags="coalition,advocacy">
+        <img class="logo" src="images/wscadv.png" alt="WSCADV logo" onerror="this.style.display='none'">
+        <h4>WA State Coalition Against Domestic Violence (WSCADV)</h4>
+        <div class="meta">206-389-2520</div>
+        <p class="desc">Statewide advocacy and resources.</p>
+      </article>
+
+      <article class="resource" data-area="seattle" data-tags="family-services,intervention">
+        <img class="logo" src="images/wellspring.png" alt="Wellspring logo" onerror="this.style.display='none'">
+        <h4>Wellspring Family Services — Domestic Intervention</h4>
+        <div class="meta">206-826-3044</div>
+        <p class="desc">Domestic intervention and family services.</p>
+      </article>
+
+      <article class="resource" data-area="eastside" data-tags="youth,services">
+        <img class="logo" src="images/youth_eastside.png" alt="Youth Eastside logo" onerror="this.style.display='none'">
+        <h4>Youth Eastside Services — Bellevue / Kirkland / Redmond</h4>
+        <div class="meta">425-747-4937</div>
+        <p class="desc">Youth and family services across the Eastside.</p>
+      </article>
+
+      <!-- Add any remaining resources from your list here using the same structure.
+           Ensure each has data-area and data-tags and a matching logo in /images. -->
+    </section>
+  </div>
+</main>
+
+<script src="js/main.js" defer></script>
+</body>
+</html>

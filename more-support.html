@@ -1,0 +1,107 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<title>DV's Help Desk — More Support</title>
+<link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+<nav class="site-nav dark" role="navigation" aria-label="Main">
+  <div class="brand">
+  
+    <span class="site-title">DV's Help Desk</span>
+  </div>
+  <ul class="nav-links" role="menubar">
+    <li><a class="nav-link" id="nav-home" href="index.html">Home</a></li>
+    <li><a class="nav-link" id="nav-resources" href="resources.html">Community Resources</a></li>
+    <li><a class="nav-link active" id="nav-more" href="more-support.html">More Support</a></li>
+    <li><a class="nav-link" id="nav-highlights" href="highlights.html">Community Highlights</a></li>
+    <li><a class="nav-link" id="nav-faq" href="faq.html">FAQs</a></li>
+  </ul>
+</nav>
+
+
+<header class="support-hero title-hero" style="background-image:url('images/moreSupportImage.jpg');">
+  <div class="hero-inner wrap">
+    <div class="title-box solid">
+      <h1>MORE SUPPORT</h1>
+    </div>
+    
+  </div>
+</header>
+
+
+<main class="wrap">
+  <section class="support-content">
+    <div class="support-left">
+      <div class="support-box small-box">
+        <p>Additional support to help people seek safety, stability, and long-term help more efficiently.</p>
+      </div>
+
+      <div class="support-box">
+        <h3>Domestic Violence & Leaving Safely</h3>
+        <p>If you are thinking about leaving an abusive situation, you may need access to housing, food assistance, employment, and counseling. Support services can help you plan safely and connect you with these resources.</p>
+      </div>
+    </div>
+
+    <div class="support-right">
+      <div class="support-box">
+        <h3>Counseling Resources</h3>
+        <input type="text" id="supportSearch" placeholder="Search or filter resources..." class="search-bar">
+        <ul id="supportList" class="resource-list">
+          <li><strong>Care Solace</strong> – LWSD students, families & staff<br>Phone: 888-515-0595</li>
+          <li><strong>Catholic Community Services</strong> – Seattle<br>Phone: 206-498-0810</li>
+          <li><strong>Center for Human Services</strong> – Shoreline<br>Phone: 206-362-7282</li>
+          <li><strong>Crisis Connections (24-hr Crisis Line)</strong> – King County<br>Phone: 866-427-4747</li>
+        </ul>
+      </div>
+
+      <div class="support-box">
+        <h3>Food Banks</h3>
+        <ul class="resource-list">
+          <li><strong>Hopelink</strong> — Main contact for food assistance (north & east King County): <strong>425-869-6000</strong></li>
+          <li><strong>Edmonds Food Bank</strong> — Edmonds: <strong>(425) 775-4441</strong></li>
+          <li><strong>Food Lifeline</strong> — Regional distributor: <strong>(206) 545-6600</strong></li>
+          <li><strong>Renewal Food Bank</strong> — Bellevue: <strong>425-736-8132</strong></li>
+          <li><strong>The Salvation Army Food Bank & Social Services</strong> — Seattle: <strong>(206) 447-9944</strong></li>
+        </ul>
+      </div>
+
+      <div class="support-box">
+        <h3>Shelters</h3>
+        <ul class="resource-list">
+          <li><strong>Safe Horizon</strong> — National hotline: <strong>1-800-621-4673</strong> (24/7)</li>
+          <li><strong>Vision House</strong> — Families experiencing homelessness: <strong>425-633-7661</strong> / <strong>425-228-6356</strong></li>
+          <li><strong>The Sophia Way</strong> — Shelter & support for women: <strong>425-463-6285</strong> (Helen’s Place: 425-572-2178; Sophia’s Place: 425-896-7385)</li>
+          <li><strong>Emergency Shelter Services — CWSCares</strong> — King County intake: <strong>206-245-1026</strong> (or 211 for coordinated entry)</li>
+          <li><strong>Broadview Domestic Violence Shelter (Solid Ground)</strong> — 24/7 confidential DV shelter: <strong>206-299-2500</strong> (secure intake) · Office: <strong>206-694-6700</strong></li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section class="suggest-resource">
+    <div class="support-box full-width" id="suggestBox">
+      <div id="formContent">
+        <h3>Suggest a Resource</h3>
+        <p>Help grow our community resource hub by submitting a resource below. This form is anonymous.</p>
+
+        <label for="resourceLink">New Resource Link</label>
+        <input type="text" id="resourceLink" placeholder="https://example.org" class="resource-input">
+
+        <button class="submit-btn" id="submitResource">Submit Resource</button>
+      </div>
+
+      <div id="thankYouContent" class="thank-you hidden" aria-hidden="true">
+        <h3>Thank you for submitting a form!</h3>
+        <p class="submit-again" id="submitAgain">Click here to submit another suggestion</p>
+      </div>
+    </div>
+  </section>
+</main>
+
+
+<script src="js/main.js" defer></script>
+</body>
+</html>

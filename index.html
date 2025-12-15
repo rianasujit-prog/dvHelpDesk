@@ -1,0 +1,83 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>DV's Help Desk — Home</title>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <nav class="site-nav dark" role="navigation" aria-label="Main">
+    <div class="brand">
+      
+      <span class="site-title">DV's Help Desk</span>
+    </div>
+    <ul class="nav-links" role="menubar">
+      <li><a class="nav-link" id="nav-home" href="index.html">Home</a></li>
+      <li><a class="nav-link" id="nav-resources" href="resources.html">Community Resources</a></li>
+      <li><a class="nav-link" id="nav-more" href="more-support.html">More Support</a></li>
+      <li><a class="nav-link" id="nav-highlights" href="highlights.html">Community Highlights</a></li>
+      <li><a class="nav-link" id="nav-faq" href="faq.html">FAQs</a></li>
+    </ul>
+  </nav>
+
+  <!-- Safety Alert Modal -->
+  <div id="safetyModal" class="modal" role="dialog" aria-labelledby="safetyTitle" aria-modal="true" aria-hidden="true">
+    <div class="modal-panel" role="document">
+      <h2 id="safetyTitle">Safety Alert</h2>
+      <p>
+        Computer use can be monitored and is impossible to completely clear. If you are afraid your internet usage might be monitored, call the DVSAS 24-hour helpline at
+        <strong>1−877-715-1563</strong>.
+      </p>
+      <p>Users will be redirected to Google when clicking the “Exit” button.</p>
+      <div class="modal-actions">
+        <button id="modalClose" class="btn" type="button">Continue</button>
+        <button id="modalExit" class="btn btn-danger" type="button">Exit (Go to Google)</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- HERO -->
+  <header class="hero">
+    <div class="hero-bg" id="heroBg" style="background-image:url('images/rippleHome.png');" aria-hidden="true"></div>
+    <div class="hero-content wrap">
+      <blockquote class="hero-quote">“It's so hard to leave—until you leave. And then it is the easiest thing in the world.” – John Green</blockquote>
+    </div>
+  </header>
+
+  <main class="wrap">
+    <section class="stats" aria-labelledby="statsTitle">
+      <h2 id="statsTitle">Statistics from the Desk</h2>
+
+      <div class="carousel" role="region" aria-roledescription="carousel" aria-label="Statistics carousel">
+        <button class="carousel-btn prev" aria-label="Previous" data-action="prev">‹</button>
+
+        <div class="slide-window" aria-live="polite">
+          <div class="slides" data-slides>
+            <div class="slide">Nearly 3 in 10 women (29%) and 1 in 10 men (10%) in the US have experienced rape, physical violence, and/or stalking by a partner and reported it having a related impact on their functioning.<cite>Black et al., NISVS 2010 Summary Report</cite></div>
+            <div class="slide">1 in 4 women (24.3%) and 1 in 7 men (13.8%) aged 18 and older in the US have been the victim of severe physical violence by an intimate partner in their lifetime.<cite>Black et al., NISVS 2010 Summary Report</cite></div>
+            <div class="slide">Almost half of all women and men in the US have experienced psychological aggression by an intimate partner in their lifetime (48.4% and 48.8%, respectively).<cite>Black et al., NISVS 2010 Summary Report</cite></div>
+            <div class="slide">An average of 24 people per minute are victims of rape, physical violence or stalking by an intimate partner in the United States — more than 12 million women and men over the course of a single year.<cite>Black et al., NISVS 2010 Summary Report</cite></div>
+            <div class="slide">Nearly 20 people physically abused by an intimate partner every minute in the U.S. (or over 10 million annually).<cite>NCADV, The National Domestic Violence Hotline, PCADV</cite></div>
+          </div>
+        </div>
+
+        <button class="carousel-btn next" aria-label="Next" data-action="next">›</button>
+      </div>
+
+      <div class="dots" data-dots></div>
+    </section>
+
+    <!-- Our Principles (updated text) -->
+    <section class="principles" id="principles" aria-labelledby="principlesTitle">
+      <h3 id="principlesTitle">Our Principles</h3>
+      <p>
+        Our website aims to provide safety, accessibility, and resources. We support individuals and families who are victims of domestic and family violence by offering reliable community resources. We believe that everyone deserves to feel safe, and our goal is to bring trusted services such as shelters, counseling, food assistance, and support into one efficient resource hub. By emphasizing community organizations, we also encourage people to build their own sense of community. Through this, we aim to help individuals heal, start a new life, and gain long-term stability.
+      </p>
+    </section>
+  </main>
+
+
+  <script src="js/main.js" defer></script>
+</body>
+</html>
